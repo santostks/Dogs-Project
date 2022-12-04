@@ -1,1 +1,10 @@
-<p>dog works!</p>
+<div class="container">
+    <button (click)="getDog()">Mostrar Cachorro!</button>
+    <div class="dogDiv" *ngIf="this.dog">
+        <figure class="imgContainer">
+            <img id="imageDog" [src]="this.dog.message" alt=>
+        </figure>
+
+      
+    </div>
+</div>
